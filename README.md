@@ -38,9 +38,9 @@ wiki page</a>.
 
 In short, a simulation is run by providing a set of .model, .init, and .rk files at terminal:
 
-'''
+```
 TISSUE/bin/solver example.model example.init example.rk
-'''
+```
 where <tt>TISSUE</tt> is the full path to the directory where tissue was downloaded 
 and it is assumed you are in the directory where the model/init/rk files are stored.
 This will generate a <tt>vtk</tt> directory where output files are stored.
@@ -59,5 +59,6 @@ paraview by <tt>file/load...</tt>.
 <h3>Contacts</h3>
 
 Behruz Bozorg (behruz@thep.lu.se)<br>
-Henrik Jönsson (henrik.jonsson@slcu.cam.ac.uk)
+Henrik Jönsson (henrik.jonsson@slcu.cam.ac.uk)<br>
+Siobhan Braybrook (siobhanb@ucla.edu)
 
