@@ -1,7 +1,7 @@
 <h2>Introduction</h2>
 
 The files provided via this project are used to run mechanical growth simulations of 3D hypocotyls
-using the <a href="https://www.gitlab.com/slcu/teamhj/tissue>Tissue</a> simulation software,
+using the <a href="https://www.gitlab.com/slcu/teamhj/tissue">Tissue</a> simulation software,
 and can be used to produce the computational model output in Bou Daher et al (2018). 
 The simulations include cell wall mechanics where individual walls can have specified 
 (asymmetric or anisotropic) elastisities; pressure and anisotropic forces can be applied,
@@ -32,7 +32,7 @@ and output format.
 <h3>Solver</h3>
 
 All simulations have been performed using the in-house developed c++ solver 
-<a href=https://www.gitlab.com/slcu/teamhj/tissue">Tissue</a>. Installation and compiling 
+<a href="https://www.gitlab.com/slcu/teamhj/tissue">Tissue</a>. Installation and compiling 
 instructions can be found via the <a href="https://gitlab.com/slcu/teamHJ/tissue/wikis/Installation">
 wiki page</a>.
 
@@ -50,7 +50,7 @@ This will generate a <tt>vtk</tt> directory where output files are stored.
 Hypocotyl geometries are stored as <a href="https://www.vtk.org">vtk</a> files (in the vtk directory) during the simulation
 and the user can specify how often a 'snapshot' should be taken (in the *.rk files). 
 These can for example be visualised using <a
-href=http://www.paraview.org>Paraview</a> (see example Figure) 
+href="http://www.paraview.org">Paraview</a> (see example Figure) 
 Settings for the visualisations are found in the files *.* that can be loaded into 
 paraview by <tt>file/load...</tt>.
 
