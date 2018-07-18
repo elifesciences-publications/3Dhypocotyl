@@ -11,10 +11,6 @@ These instructions assume you have installed the Tissue software in file directo
 
 For more information, see: https://gitlab.com/slcu/teamHJ/behruz/3Dhypocotyl
 
-First, go to the directory with the files:
-
-> cd FigS4
-
 ---------------------------------------------------------------------- 
 Figure S4A:
 ----------------------------------------------------------------------
@@ -43,7 +39,7 @@ asymmetricAnisoW.init to be used in step (A.iv) below is created.
 (A.iii) To generate the middle left panel with symmetric walls and
 anisotropic wall material on internal walls with growth, run:
 
-> TISSUE/bin/simulator symmetricAnisoW.init symmetricAnisoWGrowth.model growth.rk
+> TISSUE/bin/simulator symmetricAnisoWGrowth.model symmetricAnisoW.init growth.rk
 
 Paraview can be used to visualise the data generated in the 'vtk'
 directory as described for Fig4. Note,
@@ -52,7 +48,7 @@ the symmetricAnisoW.init file is needed and is created in step (A.i) above.
 (A.iv) To generate the middle right panel with asymmetric walls and
 anisotropic wall material on internal walls with growth, run:
 
-> TISSUE/bin/simulator asymmetricAnisoW.init asymmetricAnisoWGrowth.model growth.rk
+> TISSUE/bin/simulator asymmetricAnisoWGrowth.model asymmetricAnisoW.init growth.rk
 
 Paraview can be used to visualise the data generated in the 'vtk'
 directory as described for Fig 4. Note,
