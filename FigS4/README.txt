@@ -1,0 +1,72 @@
+Instructions to generate results presented in Figure S4 in
+
+Bou Daher F, Chen Y, Bozorg B, Heywood Clough J, Jönsson H, Braybrook SA (2018)
+Anisotropic growth is achieved through the additive mechanical effect of material 
+anisotropy and elastic asymmetry
+
+These instructions assume you have installed the Tissue software in file directory TISSUE.
+
+'>' indicates that the command is to be executed in a terminal window (without the >), e.g.
+> command
+
+For more information, see: https://gitlab.com/slcu/teamHJ/behruz/3Dhypocotyl
+
+First, go to the directory with the files:
+
+> cd FigS4
+
+---------------------------------------------------------------------- 
+Figure S4A:
+----------------------------------------------------------------------
+
+(A.i) To generate the top left panel with symmetric walls and
+anisotropic wall material on internal walls with only elastic
+deformation, run:
+
+> TISSUE/bin/simulator -init_output_file symmetricAnisoW.init 3Dhypocotyl.init symmetricAnisoW.model nogrowth.rk
+
+Paraview can be used to visualise the data generated in the 'vtk'
+directory as described for Fig 4. Note, the '-init_output_file'
+results in the final state being saved in the file
+symmetricAnisoW.init, which will be used in step (A.iii) below.
+
+(A.ii) To generate the top right panel with asymmetric walls and
+anisotropic wall material on internal walls with only elastic
+deformation, run:
+
+> TISSUE/bin/simulator -init_output_file asymmetricAnisoW.init 3Dhypocotyl.init asymmetricAnisoW.model nogrowth.rk
+
+Paraview can be used to visualise the data generated in the 'vtk' directory as described above.
+
+(A.iii) To generate the bottom left panel with symmetric walls and
+anisotropic wall material on internal walls with growth, run:
+
+> TISSUE/bin/simulator symmetricAnisoW.init symmetricAnisoWGrowth.model growth.rk
+
+Paraview can be used to visualise the data generated in the 'vtk' directory as described above. Note,
+the symmetricAnisoW.init file is needed and is created in step (A.i) above.
+
+(A.iv) To generate the right panel with asymmetric walls and
+anisotropic wall material on internal walls with growth, run:
+
+> TISSUE/bin/simulator asymmetricAnisoW.init asymmetricAnisoWGrowth.model growth.rk
+
+Paraview can be used to visualise the data generated in the 'vtk' directory as described above. Note,
+the asymmetricAnisoF.init file is needed and is created in step (A.ii) above.
+
+---------------------------------------------------------------------- 
+Figure S4B:
+----------------------------------------------------------------------
+
+
+---------------------------------------------------------------------- 
+Figure S4C:
+----------------------------------------------------------------------
+
+Length information can be extracted from simulations after changing
+parameters. For simplicity, we have saved the data in the file
+growth.data, which can be used for plotting the graph. To do this using Gnuplot:
+
+> gnuplot growth.gnplt
+
+which will generate a file growth.eps (without some of the labels).

@@ -19,7 +19,7 @@ First, go to the directory with the files:
 Figure 4A:
 ----------------------------------------------------------------------
 
-(1A) To generate the middle panel with symmetric walls, run:
+(A.i) To generate the middle panel with symmetric walls, run:
 
 > TISSUE/bin/simulator 3Dhypocotyl.init symmetric.model nogrowth.rk
 
@@ -33,7 +33,7 @@ Note, that new simulations will again save the results in the vtk directory, so 
 multiple output results, you need to either move the vtk directory between simulations (e.g. >mv vtk),
 or run Tissue from different directories.
 
-(2A) To generate the right panel with asymmetric (100x) walls, run:
+(A.ii) To generate the right panel with asymmetric (100x) walls, run:
 
 > TISSUE/bin/simulator 3Dhypocotyl.init asymmetric.model nogrowth.rk
 
@@ -48,10 +48,12 @@ deformation, run:
 
 > TISSUE/bin/simulator -init_output_file symmetricAnisoF.init 3Dhypocotyl.init symmetricAnisoF.model nogrowth.rk
 
-Paraview can be used to visualise the data generated in the 'vtk' directory as described above. Note, the '-init_output_file' results in the final state being saved in the file symmetricAnisoF.init, which will be used in step (B.iii) below.
+Paraview can be used to visualise the data generated in the 'vtk' directory as described above.
+Note, the '-init_output_file' results in the final state being saved in the file symmetricAnisoF.init,
+which will be used in step (B.iii) below.
 
-(B.ii) To generate the sencond from left panel with asymmetric walls and anisotropic Forces with only elastic
-deformation, run:
+(B.ii) To generate the sencond from left panel with asymmetric walls and anisotropic Forces
+with only elastic deformation, run:
 
 > TISSUE/bin/simulator -init_output_file asymmetricAnisoF.init 3Dhypocotyl.init asymmetricAnisoF.model nogrowth.rk
 
