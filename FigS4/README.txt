@@ -23,7 +23,7 @@ Figure S4A:
 anisotropic wall material on internal walls with only elastic
 deformation, run:
 
-> TISSUE/bin/simulator -init_output_file symmetricAnisoW.init 3Dhypocotyl.init symmetricAnisoW.model nogrowth.rk
+> TISSUE/bin/simulator -init_output_file symmetricAnisoW.init symmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk
 
 Paraview can be used to visualise the data generated in the 'vtk'
 directory as described for Fig 4. Note, the '-init_output_file'
@@ -34,25 +34,38 @@ symmetricAnisoW.init, which will be used in step (A.iii) below.
 anisotropic wall material on internal walls with only elastic
 deformation, run:
 
-> TISSUE/bin/simulator -init_output_file asymmetricAnisoW.init 3Dhypocotyl.init asymmetricAnisoW.model nogrowth.rk
+> TISSUE/bin/simulator -init_output_file asymmetricAnisoW.init asymmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk
 
-Paraview can be used to visualise the data generated in the 'vtk' directory as described above.
+Paraview can be used to visualise the data generated in the 'vtk'
+directory as described for Fig4. In addition, the file
+asymmetricAnisoW.init to be used in step (A.iv) below is created.
 
-(A.iii) To generate the bottom left panel with symmetric walls and
+(A.iii) To generate the middle left panel with symmetric walls and
 anisotropic wall material on internal walls with growth, run:
 
 > TISSUE/bin/simulator symmetricAnisoW.init symmetricAnisoWGrowth.model growth.rk
 
-Paraview can be used to visualise the data generated in the 'vtk' directory as described above. Note,
+Paraview can be used to visualise the data generated in the 'vtk'
+directory as described for Fig4. Note,
 the symmetricAnisoW.init file is needed and is created in step (A.i) above.
 
-(A.iv) To generate the right panel with asymmetric walls and
+(A.iv) To generate the middle right panel with asymmetric walls and
 anisotropic wall material on internal walls with growth, run:
 
 > TISSUE/bin/simulator asymmetricAnisoW.init asymmetricAnisoWGrowth.model growth.rk
 
-Paraview can be used to visualise the data generated in the 'vtk' directory as described above. Note,
+Paraview can be used to visualise the data generated in the 'vtk'
+directory as described for Fig 4. Note,
 the asymmetricAnisoF.init file is needed and is created in step (A.ii) above.
+
+(A.v) Bottom panel. Length information can be extracted from the
+simulations above. For simplicity, we have saved the data in files
+symmetricLength.data and asymmetricLength.data that can be used for
+plotting the graph. To do this using Gnuplot:
+
+> gnuplot length.gnplt
+
+which will generate a file length.eps (without some of the labels).
 
 ---------------------------------------------------------------------- 
 Figure S4B:
@@ -66,7 +79,7 @@ these data using Gnuplot:
 
 > gnuplot sensitivity.gnplt
 
-which will generate two files,  sensitivityF.eps and sensitivityW.eps.
+which will generate two files, sensitivityF.eps and sensitivityW.eps.
 
 ---------------------------------------------------------------------- 
 Figure S4C:
