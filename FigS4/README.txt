@@ -58,6 +58,15 @@ the asymmetricAnisoF.init file is needed and is created in step (A.ii) above.
 Figure S4B:
 ----------------------------------------------------------------------
 
+Changes to the length when changing parameters can be extracted by
+simulating the model/init files provided in the sensitivityF and
+sensitivityW directories, respectively. For simplicity, we provide the
+data in sensitivityF.data and sensitivityW.data for plotting. To plot
+these data using Gnuplot:
+
+> gnuplot sensitivity.gnplt
+
+which will generate two files,  sensitivityF.eps and sensitivityW.eps.
 
 ---------------------------------------------------------------------- 
 Figure S4C:
