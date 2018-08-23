@@ -11,8 +11,8 @@ and growth is modelled using a Lockhart type of growth rule.
 
 Bou Daher F, Chen Y, Bozorg B, Heywood Clough J, Jönsson H, Braybrook SA (2018)
 Anisotropic growth is achieved through the additive mechanical effect of material 
-anisotropy and elastic asymmetry
-<a href="https://www.biorxiv.org/content/early/2018/05/07/316364"><i>bioRxiv</i></a>.
+anisotropy and elastic asymmetry <a href="https://elifesciences.org/"><i>eLife</i></a> ( and
+<a href="https://www.biorxiv.org/content/early/2018/05/07/316364"><i>bioRxiv</i></a>).
 
 <h3>Files</h3>
 
