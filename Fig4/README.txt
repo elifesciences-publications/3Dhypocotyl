@@ -1,6 +1,6 @@
 Instructions to generate results presented in Figure 4 in
 
-Bou Daher F, Chen Y, Bozorg B, Heywood Clough J, Jönsson H, Braybrook SA (2018)
+Bou Daher F, Chen Y, Bozorg B, Heywood Clough J, JÃ¶nsson H, Braybrook SA (2018)
 Anisotropic growth is achieved through the additive mechanical effect of material 
 anisotropy and elastic asymmetry
 
@@ -21,9 +21,11 @@ Figure 4A:
 
 This will create a directory 'vtk' in which output files are generated.
 
-These can be loaded into Paraview for visualisation [File/Load and select the file(s)
-followed by pressing the 'apply' button], and 3Dhypocotyl.pvsm can be used to load
-visualisation settings used in the figure into Paraview [File/...].
+These can be loaded into Paraview for visualisation ['File/Open' and select the file(s)
+followed by pressing the 'apply' button]. To help visualising the right thing,
+3Dhypocotyl.pvsm can be used to load visualisation settings and files used for the 
+figure into Paraview ['File/Load State...', Select the 3Dhypocotyl.pvsm file, 
+Choose 'Search files under specified directory' and select the vtk directory].
 
 Note, that new simulations will again save the results in the vtk directory, so if
 you would like to save multiple output results, you need to either move the vtk
