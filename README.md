@@ -65,10 +65,10 @@ Hypocotyl geometries are stored as <a href="https://www.vtk.org">vtk</a> files (
 and the user can specify how often a 'snapshot' should be taken (in the *.rk files). 
 These can for example be visualised using <a
 href="http://www.paraview.org">Paraview</a> (see example Figure) 
-Settings for the visualisations are found in the files *.* that can be loaded into 
-paraview by <tt>file/load...</tt>.
+Settings for the visualisations are found in the files *.pvsm that can be loaded into 
+paraview by <tt>File/Load State...</tt> followed by selecting the vtk directory of the output.
 
-<center><img width=500 src="paraview_example.png"></center>
+<center><img width=500 src="paraview.png"></center>
 
 <h3>Contacts</h3>
 
