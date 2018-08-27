@@ -47,7 +47,7 @@ Figure 4B:
 (B.i) To generate the left panel with symmetric anticlinal walls and anisotropic 
 internal cell walls with only elastic deformation, run:
 
-> TISSUE/bin/simulator -init_output symmetricAnisoW.init symmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk
+> TISSUE/bin/simulator -init_output symmetricAnisoW.init -init_output_format centerTriTissue symmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk
 
 Paraview can be used to visualise the data generated in the 'vtk' directory as described above.
 Note, the '-init_output_file' results in the final state being saved in the file symmetricAnisoW.init,
@@ -56,7 +56,7 @@ which will be used in step (B.iii) below.
 (B.ii) To generate the sencond from left panel with asymmetric anticlinal walls and 
 anisotropic internal cell walls with only elastic deformation, run:
 
-> TISSUE/bin/simulator -init_output asymmetricAnisoW.init asymmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk
+> TISSUE/bin/simulator -init_output asymmetricAnisoW.init -init_output_format centerTriTissue asymmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk
 
 Paraview can be used to visualise the data generated in the 'vtk' directory as described above. In addition,
 the file asymmetricAnisoW.init to be used in step (B.iv) below is created.
@@ -64,14 +64,14 @@ the file asymmetricAnisoW.init to be used in step (B.iv) below is created.
 (B.iii) To generate the second from right panel with symmetric anticlinal walls and anisotropic 
 internal cell walls with growth, run:
 
-> TISSUE/bin/simulator symmetricAnisoWGrowth.model symmetricAnisoW.init growth.rk
+> TISSUE/bin/simulator -centerTri_init symmetricAnisoWGrowth.model symmetricAnisoW.init growth.rk
 
 Paraview can be used to visualise the data generated in the 'vtk' directory as described above. Note,
 the symmetricAnisoW.init file is needed and is created in step (B.i) above.
 
 (B.iv) To generate the right panel with asymmetric anticlinal walls and anisotropic internal cell walls with growth, run:
 
-> TISSUE/bin/simulator asymmetricAnisoWGrowth.model asymmetricAnisoW.init growth.rk
+> TISSUE/bin/simulator -centerTri_init asymmetricAnisoWGrowth.model asymmetricAnisoW.init growth.rk
 
 Paraview can be used to visualise the data generated in the 'vtk' directory as described above. Note,
 the asymmetricAnisoW.init file is needed and is created in step (B.ii) above.
