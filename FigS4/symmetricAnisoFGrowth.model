@@ -2,7 +2,7 @@
 
 CenterTriangulation::Initiate 2 1 1
 0  # not override 
-2  # double as continuation of single
+2  # double from single
 39 # internalVarStartIndex
 
 
