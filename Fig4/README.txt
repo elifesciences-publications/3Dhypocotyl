@@ -27,7 +27,7 @@ followed by pressing the 'apply' button]. To help visualising the right thing,
 figure into Paraview ['File/Load State...', Select the 3Dhypocotyl.pvsm file, 
 Choose 'Search files under specified directory' and select the vtk directory].
 Note that the above mentioned Paraview state file is generated from Paraview 4.0.1.
-Loading it in another version may result in errors. 
+Loading it in other versions may result in errors. 
 
 Note, that new simulations will again save the results in the vtk directory, so if
 you would like to save multiple output results, you need to either move the vtk
@@ -44,39 +44,40 @@ Paraview can be used to visualise the data generated in the 'vtk' directory as d
 Figure 4B:
 ----------------------------------------------------------------------
 
-(B.i) To generate the left panel with symmetric walls and anisotropic Forces with only elastic
-deformation, run:
+(B.i) To generate the left panel with symmetric anticlinal walls and anisotropic 
+internal cell walls with only elastic deformation, run:
 
-> TISSUE/bin/simulator -init_output_file symmetricAnisoF.init symmetricAnisoF.model 3Dhypocotyl.init nogrowth.rk
+> TISSUE/bin/simulator -init_output_file symmetricAnisoW.init symmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk
 
 Paraview can be used to visualise the data generated in the 'vtk' directory as described above.
-Note, the '-init_output_file' results in the final state being saved in the file symmetricAnisoF.init,
+Note, the '-init_output_file' results in the final state being saved in the file symmetricAnisoW.init,
 which will be used in step (B.iii) below.
 
-(B.ii) To generate the sencond from left panel with asymmetric walls and anisotropic Forces
-with only elastic deformation, run:
+(B.ii) To generate the sencond from left panel with asymmetric anticlinal walls and 
+anisotropic internal cell walls with only elastic deformation, run:
 
-> TISSUE/bin/simulator -init_output_file asymmetricAnisoF.init asymmetricAnisoF.model 3Dhypocotyl.init nogrowth.rk
+> TISSUE/bin/simulator -init_output_file asymmetricAnisoW.init asymmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk
 
 Paraview can be used to visualise the data generated in the 'vtk' directory as described above. In addition,
-the file asymmetricAnisoF.init to be used in step (B.iv) below is created.
+the file asymmetricAnisoW.init to be used in step (B.iv) below is created.
 
-(B.iii) To generate the second from right panel with symmetric walls and anisotropic Forces with growth, run:
+(B.iii) To generate the second from right panel with symmetric anticlinal walls and anisotropic 
+internal cell walls with growth, run:
 
-> TISSUE/bin/simulator symmetricAnisoFGrowth.model symmetricAnisoF.init growth.rk
-
-Paraview can be used to visualise the data generated in the 'vtk' directory as described above. Note,
-the symmetricAnisoF.init file is needed and is created in step (B.i) above.
-
-(B.iv) To generate the right panel with asymmetric walls and anisotropic Forces with growth, run:
-
-> TISSUE/bin/simulator asymmetricAnisoFGrowth.model asymmetricAnisoF.init growth.rk
+> TISSUE/bin/simulator symmetricAnisoWGrowth.model symmetricAnisoW.init growth.rk
 
 Paraview can be used to visualise the data generated in the 'vtk' directory as described above. Note,
-the asymmetricAnisoF.init file is needed and is created in step (B.ii) above.
+the symmetricAnisoW.init file is needed and is created in step (B.i) above.
+
+(B.iv) To generate the right panel with asymmetric anticlinal walls and anisotropic internal cell walls with growth, run:
+
+> TISSUE/bin/simulator asymmetricAnisoWGrowth.model asymmetricAnisoW.init growth.rk
+
+Paraview can be used to visualise the data generated in the 'vtk' directory as described above. Note,
+the asymmetricAnisoW.init file is needed and is created in step (B.ii) above.
 
 ---------------------------------------------------------------------- 
-Figure 4B:
+Figure 4C:
 ----------------------------------------------------------------------
 
 Length information can be extracted from the simulations above. For simplicity, we have saved the data in files
