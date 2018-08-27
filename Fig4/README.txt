@@ -26,6 +26,8 @@ followed by pressing the 'apply' button]. To help visualising the right thing,
 3Dhypocotyl.pvsm can be used to load visualisation settings and files used for the 
 figure into Paraview ['File/Load State...', Select the 3Dhypocotyl.pvsm file, 
 Choose 'Search files under specified directory' and select the vtk directory].
+Note that the above mentioned Paraview state file is generated from Paraview 4.0.1.
+Loading it in another version may result in errors. 
 
 Note, that new simulations will again save the results in the vtk directory, so if
 you would like to save multiple output results, you need to either move the vtk
