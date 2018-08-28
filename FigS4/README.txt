@@ -37,7 +37,7 @@ asymmetricAnisoW.init to be used in step (A.iv) below is created.
 (A.iii) To generate the middle left panel with symmetric walls and
 anisotropic Force with growth, run:
 
-> TISSUE/bin/simulator -centerTri_init symmetricAnisoFGrowth.model symmetricAnisoF.init growth.rk
+> TISSUE/bin/simulator -centerTri_init symmetricAnisoFGrowth.model symmetricAnisoF.init growth.rk 1>symmetricAnisoF.data
 
 Paraview can be used to visualise the data generated in the 'vtk'
 directory as described for Fig4. Note,
@@ -46,20 +46,13 @@ the symmetricAnisoW.init file is needed and is created in step (A.i) above.
 (A.iv) To generate the middle right panel with asymmetric walls and
 anisotropic Force with growth, run:
 
-> TISSUE/bin/simulator -centerTri_init asymmetricAnisoFGrowth.model asymmetricAnisoF.init growth.rk
+> TISSUE/bin/simulator -centerTri_init asymmetricAnisoFGrowth.model asymmetricAnisoF.init growth.rk 1>symmetricAnisoF.data
 
 Paraview can be used to visualise the data generated in the 'vtk'
 directory as described for Fig 4. Note,
 the asymmetricAnisoF.init file is needed and is created in step (A.ii) above.
 
-(A.v) Bottom panel. Length information can be extracted from the
-simulations above. For simplicity, we have saved the data in files
-symmetricLength.data and asymmetricLength.data that can be used for
-plotting the graph. To do this using Gnuplot:
-
-> gnuplot length.gnplt
-
-which will generate a file length.eps (without some of the labels).
+(A.v) Bottom panel. see S4C.
 
 ---------------------------------------------------------------------- 
 Figure S4B:
@@ -79,10 +72,19 @@ which will generate two files, sensitivityF.eps and sensitivityW.eps.
 Figure S4C:
 ----------------------------------------------------------------------
 
-Length information can be extracted from simulations after changing
-parameters. For simplicity, we have saved the data in the file
-growth.data, which can be used for plotting the graph. To do this using Gnuplot:
+Length and strain anisotropy information are generated in A.iii and A.iv from 
+the simulations and stored in the files symmetricAnisoF.data and 
+asymmetricAnisoF.data. First and second columns are the length of the template 
+as well as strain anisotropy averaged over the outer cell faces of epidermis. 
+These can be used for plotting the graph in S4C and bottom panel in S4A. 
+To do this using Gnuplot, for bottom panel in S4A:
 
-> gnuplot growth.gnplt
+> gnuplot length.gnplt
 
-which will generate a file growth.eps (without some of the labels).
+and for S4C:
+
+> gnuplot aniso.gnplt
+
+
+which will generate file length.eps and aniso.eps (without some of the labels).
+
