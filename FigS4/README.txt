@@ -46,7 +46,7 @@ the symmetricAnisoW.init file is needed and is created in step (A.i) above.
 (A.iv) To generate the middle right panel with asymmetric walls and
 anisotropic Force with growth, run:
 
-> TISSUE/bin/simulator -centerTri_init asymmetricAnisoFGrowth.model asymmetricAnisoF.init growth.rk 1>symmetricAnisoF.data
+> TISSUE/bin/simulator -centerTri_init asymmetricAnisoFGrowth.model asymmetricAnisoF.init growth.rk 1>asymmetricAnisoF.data
 
 Paraview can be used to visualise the data generated in the 'vtk'
 directory as described for Fig 4. Note,
