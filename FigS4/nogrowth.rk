@@ -1,6 +1,6 @@
 RK5Adaptive  # solver
 0  10        # start time, end time
-70 20         # flag  data points 
+71 20         # flag  data points 
 
 
 0.001 1e-4     # comparing RK4 and RK5
