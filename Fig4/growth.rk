@@ -1,6 +1,6 @@
 RK5Adaptive   # solver
 0  300        # start time, end time
-1 100         # data points
+70 100        # data points
 
 
 0.001 1e-4     # comparing RK4 and RK5
