@@ -51,7 +51,7 @@ VertexFromCellPlaneLinearCenterTriangulation 3 1 1
 39     # additional wall index
 
 VertexFromCellPlaneLinearCenterTriangulation 3 1 1
-0.12   # pressure 
+0.35   # pressure 
 2      # flag, 2:area weighted pressure, only in z direction
 0.00   # dt
 
@@ -81,8 +81,8 @@ maxVelocity 0 1 1
 
 
 CenterTriangulation::WallGrowth::StrainTRBS 4 3 1 1 1
-5        # k_growth 
-.018    # s_threshold  
+10        # k_growth 
+.054    # s_threshold  
 .03    # velocity threshold 
 1        # double length index
      
