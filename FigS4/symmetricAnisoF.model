@@ -44,14 +44,14 @@ VertexFromTRBScenterTriangulationMT 11 4 11 1 2 2
 12   # 2nd stress
 
 VertexFromCellPlaneLinearCenterTriangulation 3 1 1
-.2     # pressure 
+0.2     # pressure 
 1      # flag, 1:area weighted pressure
 0.00   # dt
 
 39     # additional wall index
 
 VertexFromCellPlaneLinearCenterTriangulation 3 1 1
-0.12   # pressure 
+0.35   # pressure 
 2      # flag, 2:area weighted pressure, only in z direction
 0.00   # dt
 
