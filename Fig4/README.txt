@@ -81,9 +81,9 @@ Figure 4C:
 ----------------------------------------------------------------------
 
 Length and strain anisotropy information are generated in B.iii and B.iv from the simulations and stored 
-in the files symmetricAnisoW.data and asymmetricAnisoW.data. First and second columns are the length and average 
-strain anisotropy over the outer cell faces of epidermis. These can be used for plotting the graph in 4C. To do 
-this using Gnuplot:
+in the files symmetricAnisoW.data and asymmetricAnisoW.data. First and second columns are the length of the template 
+as well as strain anisotropy averaged over the outer cell faces of epidermis. These can be used for plotting the graph 
+in 4C. To do this using Gnuplot:
 
 > gnuplot length.gnplt
 
