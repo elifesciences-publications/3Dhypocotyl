@@ -72,7 +72,7 @@ CalculateAngleVectors 0 2 2 1
 
 SisterVertex::CombineDerivatives 0 0
 
-Hypocotyl::limitZdis 0 1 2
+Hypocotyl3D::limitZdis 0 1 2
 21
 22
 
