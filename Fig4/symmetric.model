@@ -9,7 +9,7 @@ CenterTriangulation::Initiate 0 1 1
 SisterVertex::InitiateFromDistance 1 0 # cell-cell junctions (initiation)
 0.05 # distance threshold
 
-VertexFromTRBScenterTriangulationMT 11 4 11 1 2 2
+Hypocotyl3D::VertexFromTRBScenterTriangulationMT 11 4 11 1 2 2
 1.3  # relative stiffness epidermis isotropic
 1    # relative stiffness inner hoop(longitudinal)
 1    # relative stiffness anti. axial
@@ -72,7 +72,7 @@ CalculateAngleVectors 0 2 2 1
 
 SisterVertex::CombineDerivatives 0 0
 
-limitZdis 0 1 2
+Hypocotyl3D::limitZdis 0 1 2
 21
 22
 
