@@ -48,7 +48,8 @@ Figure 4B:
 (B.i) To generate the left panel with symmetric anticlinal walls and anisotropic 
 internal cell walls with only elastic deformation, run:
 
-> TISSUE/bin/simulator -init_output symmetricAnisoW.init -init_output_format centerTriTissue symmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk 
+> TISSUE/bin/simulator -init_output symmetricAnisoW.init
+-init_output_format centerTriTissue symmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk 
 
 Paraview can be used to visualise the data generated in the 'vtk' directory as described above.
 Note, the '-init_output' results in the final state being saved in the file symmetricAnisoW.init,
@@ -57,7 +58,8 @@ which will be used in step (B.iii) below.
 (B.ii) To generate the sencond from left panel with asymmetric anticlinal walls and 
 anisotropic internal cell walls with only elastic deformation, run:
 
-> TISSUE/bin/simulator -init_output asymmetricAnisoW.init -init_output_format centerTriTissue asymmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk 
+> TISSUE/bin/simulator -init_output asymmetricAnisoW.init
+-init_output_format centerTriTissue asymmetricAnisoW.model 3Dhypocotyl.init nogrowth.rk 
 
 Paraview can be used to visualise the data generated in the 'vtk' directory as described above. In addition,
 the file asymmetricAnisoW.init to be used in step (B.iv) below is created.
@@ -73,7 +75,8 @@ directory as described above, and the additional output to
 symmetricAnisoW.data is used to store length data (see 4C below). Note,
 the symmetricAnisoW.init file is needed and is created in step (B.i) above.
 
-(B.iv) To generate the right panel with asymmetric anticlinal walls and anisotropic internal cell walls with growth, run:
+(B.iv) To generate the right panel with asymmetric anticlinal walls
+and anisotropic internal cell walls with growth, run:
 
 > TISSUE/bin/simulator -centerTri_init asymmetricAnisoWGrowth.model
   asymmetricAnisoW.init growth.rk > asymmetricAnisoW.data
