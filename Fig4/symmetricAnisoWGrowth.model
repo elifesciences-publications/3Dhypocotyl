@@ -82,7 +82,7 @@ CenterTriangulation::WallGrowth::StrainTRBS 4 3 1 1 1
 5        # k_growth 
 .018    # s_threshold  
 .03    # velocity threshold 
-1        # double length index
+-1        # double length index for hypocotyl
      
 0    # L_ij-index
 
