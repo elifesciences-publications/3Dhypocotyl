@@ -37,15 +37,11 @@ structure in <a href="http://www.paraview.org">Paraview</a> (see Output section 
 
 * <tt>*.data</tt> files hold data, such as length, for plotting different graphs.
 
-* <tt>*.gnplt</tt> files have instructions for plotting the graphs using 
-<a href="http://www.gnuplot.info/">Gnuplot</a>. 
-
-
 <h3>Solver</h3>
 
 All simulations have been performed using the in-house developed c++ solver 
 <a href="https://www.gitlab.com/slcu/teamhj/tissue">Tissue</a>. Installation and compiling 
-instructions can be found via the <a href="https://gitlab.com/slcu/teamHJ/tissue/wikis/Installation">
+instructions can be found via the <a href="https://gitlab.com/slcu/teamHJ/tissue/wikis/">
 wiki page</a>.
 
 In short, a simulation is run by providing a set of .model, .init, and .rk files at terminal:
@@ -61,10 +57,10 @@ in the Tissue Documentation. This is also true for the format of the *.init and 
 
 <h3>Outputs</h3>
 
-Hypocotyl geometries are stored as <a href="https://www.vtk.org">vtk</a> files (in the vtk directory) during the simulation
-and the user can specify how often a 'snapshot' should be taken (in the *.rk files). 
-These can for example be visualised using <a
-href="http://www.paraview.org">Paraview</a> (see example Figure) 
+Hypocotyl geometries are stored as <a href="https://www.vtk.org">vtk</a> files 
+(in the vtk directory) during the simulation and the user can specify how often 
+a 'snapshot' should be taken (in the *.rk files). These can for example be visualised 
+using <a href="http://www.paraview.org">Paraview</a> (see example Figure) 
 Settings for the visualisations are found in the files *.pvsm that can be loaded into 
 paraview by <tt>File/Load State...</tt> followed by selecting the vtk directory of the output.
 
