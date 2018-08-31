@@ -80,7 +80,7 @@ maxVelocity 0 1 1
 22 # store index for velocity
 
 
-CenterTriangulation::WallGrowth::StrainTRBS 4 3 1 1 1
+Hypocotyl3D::StrainTRBS 4 3 1 1 1
 10        # k_growth 
 .055    # s_threshold  
 .03    # velocity threshold 
