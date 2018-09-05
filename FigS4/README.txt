@@ -64,9 +64,11 @@ Figure S4B:
 ----------------------------------------------------------------------
 
 Changes to the length when changing parameters can be extracted by
-simulating the model/init files provided in the sensitivityF and
-sensitivityW directories, respectively. For simplicity, we provide the
-data in sensitivityF.data and sensitivityW.data for plotting. 
+simulating the models after updating parameters in the model/init files 
+according to the descriptionm in the methods. For simplicity, we provide the
+data in sensitivityF.data and sensitivityW.data in the sensitivity directory
+for plotting. Each row corresponds to the relative change for each parameter 
+change as described in the figure legend.
 
 ---------------------------------------------------------------------- 
 Figure S4C:
