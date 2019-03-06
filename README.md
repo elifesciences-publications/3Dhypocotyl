@@ -1,3 +1,8 @@
+
+
+### This code is associated with the paper from Daher et al., "Anisotropic growth is achieved through the additive mechanical effect of material anisotropy and elastic asymmetry". eLife, 2018. http://dx.doi.org/10.7554/eLife.38161
+
+
 <h2>Introduction</h2>
 
 The files provided via this project are used to run mechanical growth simulations of 3D hypocotyls
